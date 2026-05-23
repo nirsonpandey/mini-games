@@ -4,21 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>number guessing game</title>
+    <style>
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #b8ddee;
+   
+}
+h2{
+  
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family:serif;
+    font-size: 30px;
+   text-shadow: 2px 2px 2px rgb(13, 155, 190);
+}
+    </style>
+
 </head>
 <body>
-   <h2>guess a number between 1 and 100</h2> 
-   <input type="number" id="guess"
+   <h2>Guess a number between 1 and 100</h2> 
+   <div>
+    <input type="number" id="guess"
    placeholder="Enter your guess" >
     <button onclick="checkGuess()">Submit</button>
+    </div>
     <p id="result"></p>
+    <p id="tries">Tries: 0</p>
     <script>
         const randomNumber = Math.floor(Math.random() * 100) + 1;
+        let tries=0;
         function checkGuess() {
+                tries++;
+                document.getElementById('tries').textContent = 'Tries: ' + tries;
+
+                if(tries>10){
+                    document.getElementById('result').textContent='Game over! The number was ' + randomNumber;
+                    return;
+                }
             const userGuess = parseInt(document.getElementById('guess').value);
             const resultElement = document.getElementById('result');
 
             if(userGuess === randomNumber) {
-                resultElement.textContent = 'Congratulations! You guessed the number!';
+                resultElement.textContent = 'Congratulations! You guessed the number! in ' + tries + ' tries.';
             } else if (userGuess < randomNumber) {
                 resultElement.textContent = 'Too low! Try again.';
             } else {
