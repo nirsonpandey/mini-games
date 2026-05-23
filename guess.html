@@ -8,7 +8,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color: #b8ddee;
+    background-color: #f0f5f8;
    
 }
 h2{
@@ -20,7 +20,7 @@ h2{
     text-align: center;
     font-family:serif;
     font-size: 30px;
-   text-shadow: 2px 2px 2px rgb(13, 155, 190);
+   text-shadow: 2px 2px 2px rgb(9, 216, 231);
 }
 #guess{
     display: flex;
@@ -42,11 +42,24 @@ h2{
   align-items: center;
   gap: 15px;
 }
-
+footer{
+    text-align :center ;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    height :100px;
+    box-shadow: 0px 4px 12px rgba(230, 41, 220, 0.1);
+}
     </style>
 
 </head>
 <body>
+    <header>
+        <h1>Number Guessing Game</h1>
+    </header>
+
    <h2>Guess a number between 1 and 100</h2><br><br> <br>
    
    <div id="box">
@@ -80,5 +93,10 @@ h2{
             }
         }
     </script>
+<br><br>
+    <footer>
+        Created by Nirson <br>
+        Try again anytime you want to play again!
+    </footer>
 </body>
 </html>
