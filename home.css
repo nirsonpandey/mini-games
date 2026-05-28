@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F0F9FF;
+    background-image: radial-gradient(#D1E9FF 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #1A1A1A;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 3px solid #1A1A1A;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 800;
+    color: #1A1A1A;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #1A1A1A;
+    margin-left: 20px;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+#navbar a:hover {
+    background: #00A3FF;
+    color: white;
+    transform: skewX(-10deg);
+}
+
+#introwala {
+    padding: 60px 0;
+    max-width: 800px;
+}
+
+#intro-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #1A1A1A;
+    text-shadow: 3px 3px 0px #00A3FF;
+}
+
+#introwala p {    
+    font-size: 1.2rem;
+    background: white;
+    padding: 20px;
+    border: 3px solid #1A1A1A;
+    box-shadow: 8px 8px 0px #1A1A1A;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 4px solid #1A1A1A;
+    box-shadow: 10px 10px 0px #FF6B6B;
+    max-width: 400px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #1A1A1A;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #00A3FF;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 50px;
+    background: #1A1A1A;
+    color: white;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.social a {
+    color: #00A3FF;
+    font-size: 1.8rem;
+    margin: 10px 15px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.social a:hover {
+    color: #FF6B6B;
+    transform: rotate(15deg);
+}
